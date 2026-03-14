@@ -10,11 +10,11 @@ export const customerApi = {
     return res.data;
   },
   update: async (id, data) => {
-    const res = await api.put(`/business/customers/${id}`, data);
+    const res = await api.put(`/customers/${id}`, data);
     return res.data;
   },
   delete: async (id) => {
-    const res = await api.delete(`/business/customers/${id}`);
+    const res = await api.delete(`/customers/${id}`);
     return res.data;
   },
 };

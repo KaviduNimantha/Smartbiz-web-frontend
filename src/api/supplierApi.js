@@ -10,11 +10,11 @@ export const supplierApi = {
     return res.data;
   },
   update: async (id, data) => {
-    const res = await api.put(`/business/suppliers/${id}`, data);
+    const res = await api.put(`/suppliers/${id}`, data);
     return res.data;
   },
   delete: async (id) => {
-    const res = await api.delete(`/business/suppliers/${id}`);
+    const res = await api.delete(`/suppliers/${id}`);
     return res.data;
   },
 };

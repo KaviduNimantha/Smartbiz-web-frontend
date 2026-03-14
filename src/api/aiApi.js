@@ -10,11 +10,13 @@ export const aiApi = {
     return res.data;
   },
   generatePost: async (prompt) => {
-    const res = await api.post('/ai/post', { prompt });
+    // Correct endpoint is /ai/marketing (not /ai/post)
+    const res = await api.post('/ai/marketing', { prompt });
     return res.data;
   },
   summarizeInvoice: async (invoiceData) => {
-    const res = await api.post('/ai/invoice', { invoiceData });
+    // Correct endpoint is /ai/invoice-summary (not /ai/invoice)
+    const res = await api.post('/ai/invoice-summary', { invoiceData });
     return res.data;
   },
 };

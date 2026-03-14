@@ -6,7 +6,8 @@ import {
 import {
   DashboardOutlined, GroupsOutlined, InventoryOutlined,
   PeopleOutlined, ReceiptLongOutlined, AccountBalanceWalletOutlined,
-  SmartToyOutlined, LogoutOutlined, MenuOutlined, ChevronLeftOutlined
+  SmartToyOutlined, LogoutOutlined, MenuOutlined, ChevronLeftOutlined,
+  WorkspacePremiumOutlined
 } from '@mui/icons-material';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { authApi } from '../../api/authApi';
@@ -22,6 +23,7 @@ const NAV_ITEMS = [
   { label: 'Sales',              icon: <ReceiptLongOutlined />, path: '/sales' },
   { label: 'Expenses',           icon: <AccountBalanceWalletOutlined />, path: '/expenses' },
   { label: 'AI Assistant',       icon: <SmartToyOutlined />,  path: '/ai-assistant' },
+  { label: 'Subscription Plans', icon: <WorkspacePremiumOutlined />, path: '/subscription-plans' },
 ];
 
 const Sidebar = ({ open, onToggle, mobileOpen, onMobileClose }) => {
