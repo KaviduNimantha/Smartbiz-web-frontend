@@ -164,16 +164,7 @@ const Login = () => {
             {loading ? <CircularProgress size={24} color="inherit" /> : 'Sign In'}
           </Button>
 
-          <Grid container justifyContent="space-between" alignItems="center">
-            <Grid item>
-              <MuiLink
-                href="#"
-                variant="body2"
-                sx={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none', '&:hover': { color: '#fff' } }}
-              >
-                Forgot password?
-              </MuiLink>
-            </Grid>
+          <Grid container justifyContent="center" alignItems="center">
             <Grid item>
               <MuiLink
                 component={Link}
